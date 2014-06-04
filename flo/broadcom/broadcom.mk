@@ -12,8 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Call makefiles
-$(call inherit-product-if-exists, vendor/asus/flo/broadcom/broadcom.mk)
-$(call inherit-product-if-exists, vendor/asus/flo/asus/asus.mk)
-$(call inherit-product-if-exists, vendor/asus/flo/qcom/qcom.mk)
-$(call inherit-product-if-exists, vendor/asus/flo/others/others.mk)
+PRODUCT_COPY_FILES := \
+    vendor/asus/flo/broadcom/bcm2079x-b5_firmware.ncd:system/vendor/firmware/bcm2079x-b5_firmware.ncd:broadcom \
+    vendor/asus/flo/broadcom/bcm2079x-b5_pre_firmware.ncd:system/vendor/firmware/bcm2079x-b5_pre_firmware.ncd:broadcom
+

@@ -12,8 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Call makefiles
-$(call inherit-product-if-exists, vendor/asus/flo/broadcom/broadcom.mk)
-$(call inherit-product-if-exists, vendor/asus/flo/asus/asus.mk)
-$(call inherit-product-if-exists, vendor/asus/flo/qcom/qcom.mk)
-$(call inherit-product-if-exists, vendor/asus/flo/others/others.mk)
+PRODUCT_COPY_FILES := \
+    vendor/asus/flo/asus/libacdbdata.so:system/lib/libacdbdata.so:asus \
+    vendor/asus/flo/asus/libAKM.so:system/lib/libAKM.so:asus
+
