@@ -12,6 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Asus blob(s) necessary for Deb hardware
 PRODUCT_COPY_FILES := \
     vendor/asus/deb/asus/apns-conf.xml:system/etc/apns-conf.xml:asus \
     vendor/asus/deb/asus/libacdbdata.so:system/lib/libacdbdata.so:asus \
